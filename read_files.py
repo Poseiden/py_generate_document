@@ -16,7 +16,7 @@ def process_directory(directory_path):
             file_path = os.path.join(root, file_name)
             content_string = extract_api_tags(file_path)
             if content_string is not None:
-                print(f'{file_path}: {content_string}')
+                print(content_string)
 
 # Take user input for the absolute path
 absolute_path = input("Enter the absolute path: ")
